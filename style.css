@@ -1,7 +1,10 @@
+
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Mulish;
 }
 
 :root{
@@ -9,7 +12,12 @@
 }
 
 .container{
-    padding:30px 80px;
+    padding:30px 0px;
+    padding-bottom:0;
+}
+
+.container > header{
+    padding:0 80px;
 }
 
 .container nav{
@@ -22,7 +30,7 @@
     display:flex;
     align-items:center;
     text-decoration:none;
-    color:var(--primary-color);
+    color:black;
     font-size:36px;
     font-weight:800;
 }
@@ -32,7 +40,7 @@
 }
 
 .container nav > .logo > a > span > span{
-    color:black;
+    color:var(--primary-color);
 }
 
 .container nav > .menu > a{
@@ -106,6 +114,10 @@
 
 .container header .banner form option{
     width:50%;
+}
+
+.container > main{
+    padding:0 80px;
 }
 
 .container main > .tours{
@@ -317,4 +329,142 @@
 .container main > .choose_us .wrapper .item p{
     color:#5A5A5D;
     line-height:1.5;
+}
+
+.container main > .newsletter{
+    display:flex;
+    justify-content:space-between;
+}
+
+.container main > .newsletter > form{
+    width:39%;
+    border: 1px solid #FF5400;
+    border-radius:16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:25px;
+}
+
+.container main > .newsletter > form h3{
+    font-size:24px;
+    padding-bottom:10px;
+}
+
+.container main > .newsletter > form p{
+    color:#5A5A5D;
+    line-height:1.6;
+}
+
+.container main > .newsletter > form hr{
+    margin:15px 0;
+    border:none;
+    border-top:1px solid rgba(19, 19, 24, 0.10);
+}
+
+.container main > .newsletter > form :is(input,button){
+    padding:15px 20px;
+    border:none;
+    box-shadow:none;
+    outline:none;
+    background-color:rgba(19, 19, 24, 0.05);
+    margin:7px 0;
+    border-radius:8px;
+}
+
+.container main > .newsletter > form input::placeholder{
+    color:rgba(19, 19, 24, 0.30);
+}
+
+.container main > .newsletter > form button{
+    background-color:var(--primary-color);
+    color:white;
+    font-weight:800;
+    cursor:pointer;
+}
+
+.container main > .newsletter > figure{
+    width:59%;
+    position:relative;
+}
+
+.container main > .newsletter > figure img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.container main > .newsletter > figure .offer_tag{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    right:0;
+    bottom:0;
+    background-color:var(--primary-color);
+    color:white;
+    padding:20px;
+    border-radius:16px;
+    transform:rotate(-22deg);
+    transform-origin:left;
+}
+
+.container main > .newsletter > figure .offer_tag p{
+    font-size:22px;
+    text-align:center;
+}
+
+.container main > .newsletter > figure .offer_tag h4{
+    font-size:30px;
+}
+
+.container footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:rgba(19, 19, 24, 0.05);
+    margin-top:80px;
+    padding:60px 0;
+}
+
+.container footer .logo a{
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    color:#4d4d4d;
+    padding:10px 0;
+}
+
+.container footer .logo a > span{
+    font-size:30px;
+    padding-left:8px;
+}
+
+.container footer .logo a > span > span{
+    color:var(--primary-color);
+}
+
+.container footer p{
+    width:65%;
+    text-align:center;
+    color:#5A5A5D;
+    line-height:1.6;
+}
+
+.container footer .social_icon{
+    padding-top:20px;
+}
+
+.container footer .social_icon i{
+    padding:10px;
+    font-size:110%;
+}
+
+.container footer > hr{
+    width:70%;
+    border:none;
+    border-top:1px solid rgba(19, 19, 24, 0.10);
+    margin:30px 0;
 }
