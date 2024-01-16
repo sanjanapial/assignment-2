@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary-color:#FF5400;
+}
+
+.container{
+    padding:30px 80px;
+}
+
+.container nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.container nav > .logo > a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:var(--primary-color);
+    font-size:36px;
+    font-weight:800;
+}
+
+.container nav > .logo > a > img{
+    margin:8px 15px;
+}
+
+.container nav > .logo > a > span > span{
+    color:black;
+}
+
+.container nav > .menu > a{
+    text-decoration:none;
+    font-size:18px;
+    font-weight:400;
+    padding:5px 12px;
+    color:#4d4d4d;
+}
+
+.container nav > .menu > a.active{
+    color:var(--primary-color);
+    font-weight:700;
+}
+
+.container header .banner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-size:cover;
+    padding:80px 0;
+    border-radius:16px;
+    margin:30px 0;
+}
+
+.container header .banner h1{
+    font-size:60px;
+    padding:20px 0;
+    color:white;
+}
+
+.container header .banner p{
+    font:16px;
+    padding:20px 0;
+    color:white;
+    width:60%;
+    text-align:center;
+    line-height:1.5;
+}
+
+.container header .banner form{
+    padding:20px 0;
+    background-color:rgba(255, 255, 255, 0.3);
+    display:flex;
+    justify-content:space-evenly;
+    border-radius:8px;
+    width:70%;
+}
+
+.container header .banner form > :is(input,select,button){
+    width:22%;
+    border:none;
+    box-shadow:none;
+    outline:none;
+    padding:15px 20px;
+    border-radius:8px;
+    background-color:white;
+    color:rgba(19, 19, 24, 0.50);
+}
+
+.container header .banner form > button{
+    background-color:var(--primary-color);
+    font-weight:700;
+    color:white;
+}
+
+.container header .banner form > input::placeholder{
+    color:rgba(19, 19, 24, 0.90);
+}
+
+.container header .banner form option{
+    width:50%;
+}
+
+.container main > .tours{
+    display:flex;
+    margin:80px 0;
+}
+
+.container main > .tours > div:nth-child(1){
+    width:55%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.container main > .tours > div:nth-child(1) h2{
+    font-size:40px;
+    color:#131318;
+}
+
+.container main > .tours > div:nth-child(1) :is(p,li){
+    line-height:1.5;
+    color:rgba(19, 19, 24, 0.70);
+}
+
+.container main > .tours > div:nth-child(1) ul{
+    padding:0 20px;
+}
+
+.container main > .tours > div:nth-child(1) ul li{
+    padding:8px 0;
+}
+
+.container main > .tours > div:nth-child(1) .btn{
+    text-decoration:none;
+    color:white;
+    background-color:var(--primary-color);
+    border-radius:8px;
+    font-weight:800;
+    padding:12px 30px;
+}
+
+.container main > .tours > div:nth-child(2){
+    width:45%;
+}
+
+.container main > .tours > div:nth-child(2) > img{
+    width:100%;
+}
+
+.container main > .destination{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.container main > .destination h2{
+    font-size:40px;
+    color:#131318;
+}
+
+.container main > .destination p{
+    font-size:18px;
+    color:rgba(19, 19, 24, 0.70);
+    padding:20px 0;
+}
+
+.container main > .destination :is(h2,p){
+    width:70%;
+    text-align:center;
+}
+
+.container main > .destination figure{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:20px 0;
+}
+
+.container main > .destination figure .wrapper{
+    width:49%;
+    margin:10px 0;
+    position:relative;
+}
+
+.container main > .destination figure .wrapper::before{
+    content:'dfdf';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:28px;
+    font-weight:800;
+}
+
+.container main > .destination figure .wrapper:nth-child(1):before{
+    content:'Maldives';
+}
+
+.container main > .destination figure .wrapper:nth-child(2):before{
+    content:'Indonesia';
+}
+
+.container main > .destination figure .wrapper:nth-child(3):before{
+    content:'Srilanka';
+}
+
+.container main > .destination figure .wrapper:nth-child(4):before{
+    content:'North America';
+}
+
+.container main > .destination figure .wrapper:nth-child(5):before{
+    content:'Kashmir';
+}
+
+.container main > .destination figure .wrapper:nth-child(6):before{
+    content:'Bangladesh';
+}
+
+.container main > .destination figure .wrapper:nth-child(7):before{
+    content:'Bandarban';
+}
+
+.container main > .destination figure .wrapper img{
+    width:100%;
+    height:100%;
+}
+
+.container main > .destination figure .wrapper:nth-child(3){
+    width:32%;
+}
+
+.container main > .destination figure .wrapper:nth-child(4){
+    width:40%;
+}
+
+.container main > .destination figure .wrapper:nth-child(5){
+    width:24%;
+}
+
+.container main > .destination figure .wrapper:nth-child(6){
+    width:40%;
+}
+
+.container main > .destination figure .wrapper:nth-child(7){
+    width:58%;
+}
+
+.container main > .choose_us{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:50px 0;
+}
+
+.container main > .choose_us > :is(h2,p){
+    width:70%;
+    text-align:center;
+}
+
+.container main > .choose_us > h2{
+    font-size:40px;
+    color:#131318;
+}
+
+.container main > .choose_us > p{
+    font-size:18px;
+    color:rgba(19, 19, 24, 0.70);
+    padding:20px 0;
+}
+
+.container main > .choose_us .wrapper{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.container main > .choose_us .wrapper .item{
+    width:48%;
+    background-color:rgba(251, 181, 99, 0.05);
+    margin:10px auto;
+    border-radius:16px;
+    padding:30px 25px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+}
+
+.container main > .choose_us .wrapper .item:nth-child(2){
+    background-color:rgba(41, 206, 246, 0.05);
+    border: 1px solid rgba(41, 206, 246, 0.20);
+}
+
+.container main > .choose_us .wrapper .item:nth-child(3){
+    background-color:rgba(233, 68, 68, 0.05);
+    border: 1px solid rgba(233, 68, 68, 0.20);
+}
+
+
+.container main > .choose_us .wrapper .item h3{
+    color:#131318;
+    font-size:24px;
+    padding:12px 0;
+}
+
+.container main > .choose_us .wrapper .item p{
+    color:#5A5A5D;
+    line-height:1.5;
+}
